@@ -1,0 +1,123 @@
+
+body{
+/*	margin-top:-25px;*/
+	background-color: #67beeb;
+}
+
+.colorWhite{
+	color: #ffffff;
+}
+
+
+.homeDiv{
+	padding-top: 3%;
+	padding-bottom: 50px;
+	height: 100%;
+	
+}
+.homeDiv h1{
+	font-weight:bold;
+}
+.homeDiv h2{
+	font-weight:bold;
+}
+.homeDiv h3{
+	font-weight:bold;
+}
+.homeDiv h4{
+	font-weight:bold;
+}
+
+.plansDiv {
+	padding-top: 3%;
+	padding-bottom: 50px;
+	height: 100%;
+}
+.plansDiv h1{
+	font-weight:bold;
+}
+.plansDiv h2{
+	font-weight:bold;
+}
+.plansDiv h3{
+	font-weight:bold;
+}
+.plansDiv h4{
+	font-weight:bold;
+}
+
+
+.planBox {
+
+	background-color: white;
+	padding-top: 10px;
+	padding-bottom: 20px;
+	padding-right: 5px;
+	padding-left: 5px;
+	margin: 5px;
+	color: #7f7f7f;
+	border: 1px;
+
+}
+
+
+
+
+
+
+
+#details1 {
+	color: #666666;
+	width: 100%; 
+	background-color:white; 
+	padding-top: 50px; 
+	padding-bottom: 50px
+}
+#details1 ul{
+	list-style-type: none;
+}
+#details1 li{
+	font-size: 20px;
+	padding-top: 35px;
+
+}
+
+#details2 {
+	background-color:#f9f9f9; 
+	padding-top: 50px; 
+	padding-bottom: 50px;
+	width: 100%; 
+	padding-top: 50px; 
+	padding-bottom: 50px
+}
+
+#details3 {
+	background-color:white; 
+	padding-top: 50px; 
+	padding-bottom: 50px;
+	width: 100%; 
+	padding-top: 50px; 
+	padding-bottom: 50px
+}
+
+
+/* Custom buttoms */
+/* Konduki button */
+.btn-konduki {
+    background: #3486b7;
+    color: #ffffff;
+    border: 3px solid white;
+    border-radius: 5px;
+    max-width: 350px;
+}
+ 
+.btn-konduki:hover, .btn-konduki:focus, .btn-konduki:active, .btn-konduki.active, .open > .dropdown-toggle.btn-konduki {
+    background: #27678b;
+    color: #ffffff;
+/*    box-shadow: 0.03em 0.02em #333;*/
+}
+ 
+.btn-konduki:active, .btn-konduki.active {
+    background: #27678b;
+/*    box-shadow: 0.03em 0.02em #333;*/
+}

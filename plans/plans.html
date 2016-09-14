@@ -1,0 +1,171 @@
+
+<div class="plansDiv">
+
+	<div class="container">
+
+		<div style="margin-bottom: 60px; ">
+			<img style="margin:auto; width: 100px;" class="img-responsive" src="/Images/logo.png">
+		</div>
+
+		<!-- Plans -->
+		<div ng-show="plansCtrl.plans" class="animated bounceInLeft colorWhite">
+
+			<div class="text-center colorWhite">
+
+				<h1 style="font-size:40px;">All your Facebook Campaign Daily Reports in one Dashboard</h1>
+
+				<h2 style="margin-top: 50px;">Plans and Pricing</h2>
+
+			</div>
+
+
+
+			<div style="margin-top:35px;" class="text-center">
+
+				<div class="col-lg-4 col-md-4 col-xs-12 ">
+
+					<div class="planBox">
+
+						<h3>Start Up</h3>
+						<h3>$7/month</h3>
+						<hr style="border: 0; border-top: 1px solid #7f7f7f; width:80%;">
+
+						<div style="margin-top:40px;">
+							<h4>1 account</h4>
+							<h4>1 campaign</h4>
+							<h4>Daily reports</h4>
+						</div>
+
+						<div style="margin-top:40px">
+							<button class="btn-lg btn btn-konduki" ng-click="plansCtrl.plans = false; plansCtrl.form = true; plansCtrl.plan1 = true;">Choose Plan</button>
+						</div>
+
+					</div>
+
+				</div>
+				
+				<div class="col-lg-4 col-md-4 col-xs-12">
+
+					<div class="planBox">
+
+						<h3>Company</h3>
+						<h3>$28/month</h3>
+						<hr style="border: 0; border-top: 1px solid #7f7f7f; width:80%;">
+
+						<div style="margin-top:40px;">
+							<h4 >5 account</h4>
+							<h4>2 campaigns/account</h4>
+							<h4>Daily reports</h4>
+						</div>
+
+						<div style="margin-top:40px">
+							<button class="btn-lg btn btn-konduki" ng-click="plansCtrl.plans = false; plansCtrl.form = true; plansCtrl.plan2 = true;">Choose Plan</button>
+						</div>
+
+
+					</div>
+
+				</div>
+				
+				<div class="col-lg-4 col-md-4 col-xs-12">
+
+					<div class="planBox">
+
+						<h3>Agency</h3>
+						<h3>$50/month</h3>
+						<hr style="border: 0; border-top: 1px solid #7f7f7f; width:80%;">
+
+						<div style="margin-top:40px;">
+							<h4>10 account</h4>
+							<h4>4 campaigns/account</h4>
+							<h4>Daily reports</h4>
+						</div>
+						<div style="margin-top:40px">
+							<button class="btn-lg btn btn-konduki" ng-click="plansCtrl.plans = false; plansCtrl.form = true; plansCtrl.plan3 = true;">Choose Plan</button>
+						</div>
+
+					</div>
+
+				</div>
+
+
+
+				<div class="col-lg-12 col-md-12 col-xs-12 text-center" style="margin-top: 30px;">
+
+					<h3>Manage more accounts?  <span><button class="btn-md btn btn-konduki" ng-click="plansCtrl.plans = false; plansCtrl.form = true; plansCtrl.plan4 = true;">Contact us</button></span></h3>
+
+				</div>
+
+
+
+			</div>
+
+		</div>
+
+		<!-- Form -->
+		<div ng-show="plansCtrl.form" class="animated bounceInLeft colorWhite" style="padding-top:40px;">
+
+			<h1>Hello! Your caught us before we are ready.</h1>
+
+			<h2>We are working hard to put the finishing touches of konduki. Things are going well and it should be ready to help you save time on your reports.</h2>
+			<h2>If you’d like us to send you a reminder when we are ready, just put your name and email bellow:</h2>
+
+
+			<!-- Form div -->
+			<div style="margin-top: 50px;">
+
+	            <form name="lead" ng-submit="lead.$valid && plansCtrl.registerLead()">
+	               
+	                <div class="text-center">
+
+	                	<div class="col-lg-6 col-md-6 col-xs-12 text-center">
+		                    <div class="input-group" style="margin-bottom: 10px;">
+		                        <span class="input-group-addon"><i class="fa fa-user" aria-hidden="true"></i></span>
+		                        <input type="text" ng-model="plansCtrl.lead.leadName" class="form-control" placeholder="Your Name" autocapitalize="none" required/>
+		                    </div>
+	                    </div>
+
+	                   	<div class="col-lg-6 col-md-6 col-xs-12 text-center">
+		                    <div class="input-group" style="margin-bottom: 10px;">
+		                        <span class="input-group-addon"><i class="fa fa-at" aria-hidden="true"></i></span>
+		                        <input type="email" ng-model="plansCtrl.lead.leadEmail" class="form-control" placeholder="email" autocapitalize="none" required/>
+		                    </div>
+	                    </div>
+
+	                </div>
+
+
+	                <div class="text-center">
+	                    <input type="submit" style="margin-top: 50px;" class="btn-lg btn btn-konduki" ng-hide="plansCtrl.sendingLead" value="Remind me"/>
+	                    <i style="margin-top: 50px;" class="fa fa-spinner fa-spin fa-3x colorWhite" ng-show="plansCtrl.sendingLead"></i>
+	                </div>
+
+	            </form>
+			</div>
+
+		</div>
+
+		<!-- Message -->
+		<div ng-show="plansCtrl.message" class="animated bounceInLeft colorWhite" style="padding-top:60px;">
+
+			<div class="text-center">
+
+				<h2> Thank you for Signing Up for Konduki!!.</h2>
+				<h3> We will contact you when Konduki is launched.</h3>
+
+				<div style="margin-top:40px;">
+					<button class="btn-lg btn btn-konduki" ng-click="plansCtrl.plans = true; plansCtrl.message = false;"><i class="fa fa-arrow-left" aria-hidden="true"></i> Back</button>
+				</div>
+
+			</div>
+
+
+		</div>
+
+
+	</div>
+
+
+
+</div>
+
